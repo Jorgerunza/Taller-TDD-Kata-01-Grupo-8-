@@ -5,5 +5,6 @@ class Procesador:
                 return [0,0]
             else:
                 numeros = str.split( lista, ',')
-                respuesta =[len(numeros), int(lista[0])]
+                numeros = [int(i) for i in numeros]
+                respuesta =[len(numeros), min(numeros)]
                 return respuesta
