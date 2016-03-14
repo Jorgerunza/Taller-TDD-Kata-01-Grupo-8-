@@ -5,7 +5,7 @@ class TestProcesador(TestCase):
 
     def test_contador(self):
         lista = Procesador().contador("")
-        self.assertEquals(Procesador().contador(""),[0,0],"Lista Vacia")
+        self.assertEquals(Procesador().contador(""),[0,0,0],"Lista Vacia")
 
     def test_contar_1 (self):
         lista = Procesador().contador("")
