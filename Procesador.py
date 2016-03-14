@@ -1,9 +1,9 @@
 
 class Procesador:
         def contador (self,lista):
-            if len (lista) == 0:
-                return 0
-            elif len (lista)== 1:
-                return 1
-            else :
-                return 2
+            if (lista == ''):
+                return {0}
+            else:
+                numeros = str.split( lista, ',')
+                respuesta ={len(numeros)}
+                return respuesta

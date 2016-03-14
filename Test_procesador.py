@@ -4,13 +4,13 @@ from Procesador import *
 class TestProcesador(TestCase):
 
     def test_contador(self):
-        self.assertEquals(Procesador().contador(""),0,"Lista Vacia")
+        self.assertEquals(Procesador().contador(""),{0},"Lista Vacia")
 
     def test_contar_1 (self):
-        self.assertEquals(Procesador().contador("1"),1,"Lista con un elemento")
+        self.assertEquals(Procesador().contador("1"),{1},"Lista con un elemento")
 
     def test_contar_2 (self):
-        self.assertEquals(Procesador().contador("1,2"),2,"Lista con dos elementos")
+        self.assertEquals(Procesador().contador("1,2"),{2},"Lista con dos elementos")
 
     def test_contar_n (self):
         self.assertEquals(Procesador().contador("1,2,3,4"),{4},"Lista con cuatro elementos")
