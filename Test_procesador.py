@@ -11,3 +11,6 @@ class TestProcesador(TestCase):
 
     def test_contar_2 (self):
         self.assertEquals(Procesador().contador("1,2"),2,"Lista con dos elementos")
+
+    def test_contar_n (self):
+        self.assertEquals(Procesador().contador("1,2,3,4"),{4},"Lista con cuatro elementos")
