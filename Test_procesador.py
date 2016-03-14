@@ -9,7 +9,7 @@ class TestProcesador(TestCase):
 
     def test_contar_1 (self):
         lista = Procesador().contador("")
-        self.assertEquals(Procesador().contador("1"),{1},"Lista con un elemento")
+        self.assertEquals(Procesador().contador("4"),[1,4],"Lista con un elemento")
 
     def test_contar_2 (self):
         self.assertEquals(Procesador().contador("1,2"),{2},"Lista con dos elementos")
