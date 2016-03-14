@@ -2,7 +2,7 @@
 class Procesador:
         def contador (self,lista):
             if (lista == ''):
-                return [0,0]
+                return [0,0,0]
             else:
                 numeros = str.split( lista, ',')
                 numeros = [int(i) for i in numeros]
