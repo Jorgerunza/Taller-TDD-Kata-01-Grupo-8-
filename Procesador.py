@@ -1,7 +1,9 @@
 
 class Procesador:
         def contador (self,lista):
-            if lista == "":
+            if len (lista) == 0:
                 return 0
-            else:
+            elif len (lista)== 1:
                 return 1
+            else :
+                return 2
